@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Nature Photo Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+  <script src="gallery.js" defer></script>
+</head>
+<body onload="addTabIndex()">
+  <main class="container">
+    <h1>Nature Photo Gallery</h1>
+    <p class="instructions">Hover over a photo or use the Tab key to preview it. Use Shift + Tab to move backward.</p>
+    <div id="image" aria-live="polite" aria-atomic="true">Hover over or focus on an image below to display it here.</div>
+    <section class="gallery" aria-label="Nature photographs">
+      <figure onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=900&amp;auto=format&amp;fit=crop&amp;q=85" alt="Mountain lake reflecting green hills beneath a cloudy sky" width="600" height="400">
+        <figcaption>Mountain Lake</figcaption>
+      </figure>
+      <figure onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900&amp;auto=format&amp;fit=crop&amp;q=85" alt="Sunlight shining through the trees in a green forest" width="600" height="400">
+        <figcaption>Sunlit Forest</figcaption>
+      </figure>
+      <figure onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&amp;auto=format&amp;fit=crop&amp;q=85" alt="Tropical beach with white sand and clear turquoise water" width="600" height="400">
+        <figcaption>Tropical Beach</figcaption>
+      </figure>
+      <figure onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=900&amp;auto=format&amp;fit=crop&amp;q=85" alt="Golden morning light spreading across a misty field" width="600" height="400">
+        <figcaption>Golden Sunrise</figcaption>
+      </figure>
+      <figure onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900&amp;auto=format&amp;fit=crop&amp;q=85" alt="Snow-covered mountain peaks beneath a pale blue sky" width="600" height="400">
+        <figcaption>Snowy Peaks</figcaption>
+      </figure>
+      <figure onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=900&amp;auto=format&amp;fit=crop&amp;q=85" alt="Waterfall flowing down rocks surrounded by green trees" width="600" height="400">
+        <figcaption>Forest Waterfall</figcaption>
+      </figure>
+    </section>
+  </main>
+</body>
+</html>
